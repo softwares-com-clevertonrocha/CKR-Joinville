@@ -99,9 +99,55 @@ Your browser does not support the audio element.
 
 @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
         @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+   
+   
+   
+   
+   
 
   
  </style>
+  
+  <style> 
+div {
+  width: 1000px;
+  height: 19px;
+  background-color: violet   ;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+</style>
+  
+  
+  
  
  
  <center>
@@ -248,44 +294,7 @@ Your browser does not support the audio element.
     
     
 
-<style> 
-  div
- {
-  width: 1000px;
-  height: 19px;
-  background-color: violet   ;
-  font-weight: bold;
-  position: relative;
-  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-  animation: mymove 5s infinite;
-}
 
-/* Safari 4.0 - 8.0 */
-#div1 {-webkit-animation-timing-function: linear;}
-#div2 {-webkit-animation-timing-function: ease;}
-#div3 {-webkit-animation-timing-function: ease-in;}
-#div4 {-webkit-animation-timing-function: ease-out;}
-#div5 {-webkit-animation-timing-function: ease-in-out;}
-
-/* Standard syntax */
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-  from {left: 0px;}
-  to {left: 300px;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-  from {left: 0px;}
-  to {left: 300px;}
-}
-</style>
 
 
 
